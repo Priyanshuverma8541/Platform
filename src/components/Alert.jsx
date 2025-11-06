@@ -1,0 +1,3 @@
+import React from 'react';
+const tone = { info:'bg-blue-500/15 text-blue-100 border-blue-400/30', success:'bg-green-500/15 text-green-100 border-green-400/30', warning:'bg-yellow-500/15 text-yellow-100 border-yellow-400/30', error:'bg-red-500/15 text-red-100 border-red-400/30' };
+export default function Alert({ type='info', children }) { return <div className={'rounded-xl px-4 py-3 border ' + tone[type]}>{children}</div>; }

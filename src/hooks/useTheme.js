@@ -1,0 +1,1 @@
+import { useContext, useEffect } from 'react';import { AuthContext } from '../context/AuthContext';export default function useTheme(){ const { theme } = useContext(AuthContext); useEffect(()=>{ const r=document.documentElement; if(theme==='dark') r.classList.add('dark'); else r.classList.remove('dark'); },[theme]); }

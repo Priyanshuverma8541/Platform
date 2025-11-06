@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: devsynk-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://your-backend.onrender.com/api
